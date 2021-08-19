@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="cadastro.css">
+
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <div class="container">
+                <div class="header">
+                    <img src="./images/apple.png" alt="logo">
+                </div>
+
+                <div class="cad">
+                    <button class="btn-primary">Cadastre-se</button>
+                    <button class="btn-secondary" onclick="volta()">Já tenho cadastro</button>
+                </div>
+
+                <form>
+                      <div class="inputWithIcon">
+                        <input class="nome" type="text" placeholder="Seu nome">
+                        <img src="./images/person.png" alt="nome">
+                      </div>
+                      
+                      <div class="inputWithIcon">
+                        <input class="phone" type="text" placeholder="Seu número de celular">
+                        <img src="./images/phone.png" alt="numero de celular">
+                      </div>
+
+                      <div class="inputWithIcon">
+                        <input class="email" type="text" placeholder="Seu e-mail">
+                        <img src="./images/pasta.png" alt="e-mail">
+                      </div>
+
+                      <div class="inputWithIcon">
+                        <input class="senha" type="text" placeholder="Digite uma senha forte">
+                        <img src="./images/block.png" alt="senha">
+                        <img class="mostra-senha" src="./images/eye.png" alt="mostra">
+                      </div>
+
+                      <div class="inputWithIcon">
+                        <input class="senha" type="text" placeholder="Digite a senha novamente">
+                        <img src="./images/block.png" alt="senha">
+                        <img class="mostra-senha" src="./images/eye.png" alt="mostra">
+                      </div>
+
+                      <div class="termos">
+                        <input type="checkbox" name="termo">
+                        <label for="termo">
+                            <small>
+                                Declaro que li e concordo com os <a href="https://www.institutounibanco.org.br/wp-content/uploads/2017/02/Politica_Privacidade.pdf">termos de uso</a>, e a <a href="https://www.institutounibanco.org.br/wp-content/uploads/2017/02/Politica_Privacidade.pdf">política de privacidade</a>
+                            </small>
+                        </label>
+                          
+                      </div>
+                </form>
+
+
+                <div class="submit">
+                    <button class="entrar" onclick="finalizaCad()">Finalizar cadastro</button>
+                    <button class="carrega">
+                        <img src="./images/carrega.png" alt="carregando">
+                    </button>
+                </div>
+            </div>
+        </fieldset>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

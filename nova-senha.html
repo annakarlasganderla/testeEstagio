@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="nova-senha.css">
+
+    <title>Nova senha</title>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <div class="container">
+                <div class="header">
+                    <img src="./images/apple.png" alt="logo">
+                </div>
+
+                <div class="titulo">
+                    <h3>Crie uma nova senha</h3>
+                </div>
+
+                <form action="">
+                    <div class="inputWithIcon">
+                        <input class="senha" type="text" placeholder="Digite a sua nova senha">
+                        <img src="./images/block.png" alt="senha">
+                        <img class="mostra-senha" src="./images/eye.png" alt="mostra">
+                      </div>
+
+                      <div class="inputWithIcon">
+                        <input class="senha" type="text" placeholder="Confirme a sua nova senha">
+                        <img src="./images/block.png" alt="senha">
+                        <img class="mostra-senha" src="./images/eye.png" alt="mostra">
+                      </div>
+                </form>
+
+                <div class="submit">
+                    <button class="entrar" onclick="finalizaSenha()">Alterar senha</button>
+                    <button class="carrega">
+                         <img src="./images/carrega.png" alt="carregando">
+                    </button>
+                </div>
+            </div>
+        </fieldset>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

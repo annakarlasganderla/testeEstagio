@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="recupera-senha.css">
+
+    <title>Recuperar senha</title>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <div class="container">
+                <div class="header">
+                    <img src="./images/apple.png" alt="logo">
+                </div>
+
+                <div class="titulo">
+                    <h2>Digite seu e-mail cadastrado</h2>
+                    <div class="subtitulo">
+                        <p>Você receberá, em seu e-mail, o link para redefinir a sua senha</p>
+                    </div>
+                </div>
+
+                <form action="">
+                    <div class="inputWithIcon">
+                        <input class="email" type="text" placeholder="Digite seu e-mail cadastrado">
+                        <img src="./images/pasta.png" alt="email">
+                    </div>
+                </form>
+
+                <div class="buttons">
+                    <div class="botao-voltar">
+                        <button onclick="volta()">Voltar</button>
+                    </div>
+
+                    <div class="submit">
+                        <button class="entrar" onclick="novaSenha()">Entrar</button>
+                        <button class="carrega">
+                            <img src="./images/carrega.png" alt="carregando">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </fieldset>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
